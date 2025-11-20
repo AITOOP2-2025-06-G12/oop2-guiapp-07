@@ -26,9 +26,3 @@ class MainWindow(QWidget):
         self.button_transcribe.clicked.connect(lambda: print("文字起こしボタンが押されました"))
         self.button_save.clicked.connect(lambda: print("保存ボタンが押されました"))
 
-# 実行
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    window = MainWindow()
-    window.show()
-    app.exec()
